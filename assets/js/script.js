@@ -18,6 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('answer-box').addEventListener('keydown', function (event) {
         if (event.key === 'Enter') {
             checkAnswer();
+        } else if (event.key === '!') {
+            runGame('addition');
+        } else if (event.key === '"') {
+            runGame('subtract');
+        } else if (event.key === '£') {
+            runGame('multiply');
+        } else if (event.key === '$') {
+            runGame('division');
         }
     })
 
